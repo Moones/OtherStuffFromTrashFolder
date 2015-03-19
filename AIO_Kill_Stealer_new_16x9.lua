@@ -1,5 +1,10 @@
 --<<Automatically kill enemy as soon as their health drops low enough. My version, for 16x9 screen ratio>>
 
+
+
+--
+--
+--
 --new intarface
 --fixed some bugs
 --improved techies mechinic (today i am first time played on this hero:))
@@ -11,8 +16,8 @@ require("libs.SideMessage")
 config = ScriptConfig.new()
 config:SetParameter("Active", "Z", config.TYPE_HOTKEY)
 config:SetParameter("GlobalKey", "H", config.TYPE_HOTKEY)
-config:SetParameter("AutoGlobalSpells", false)
-config:SetParameter("MinTarget4AutoKill", 2)
+config:SetParameter("AutoGlobalSpells", true)
+config:SetParameter("MinTarget4AutoKill", 1)
 config:Load()
 
 local toggleKey = config.Active
